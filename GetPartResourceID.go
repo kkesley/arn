@@ -8,7 +8,7 @@ func GetPartResourceID(resourceARN string, part string) string {
 	found := false
 	for _, section := range sections {
 		if section == part {
-			found = false
+			found = true
 		} else if found {
 			return section
 		}
